@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Generator</title>
+</head>
+<body>
+    <script>
+        numInput();
+
+        function numInput() {
+            var userNum;
+            do {
+                userNum = prompt("Please input a number:");
+            } while (isNaN(userNum) || userNum === '');
+            return userNum;
+        }
+
+        shapeOutput(); 
+
+        function shapeOutput() {
+            var num = numInput();
+            num = parseInt(num);
+            document.write("Number inputted: " + num + "<br>");
+
+            if (num % 2 === 0) {
+                for (var x = num; x >= 1; x--) {
+                    var number = "";
+                    for (var j = 1; j <= i; j++) {
+                        number += i;
+                    }
+                    document.write(number + "<br>");
+                }
+            } 
+            else {
+                for (var i = num; i >= 1; i--) {
+                    var number = "";
+                    for (var j = 1; j <= num; j++) {
+                        number += i;
+                    }
+                    document.write(number + "<br>");
+                }
+            }
+        } 
+    </script>
+</body>
+</html>
