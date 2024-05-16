@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        numInput();
+        shapeOutput(); 
 
         function numInput() {
             var userNum;
@@ -17,8 +17,6 @@
             return userNum;
         }
 
-        shapeOutput(); 
-
         function shapeOutput() {
             var num = numInput();
             num = parseInt(num);
@@ -27,8 +25,8 @@
             if (num % 2 === 0) {
                 for (var x = num; x >= 1; x--) {
                     var number = "";
-                    for (var j = 1; j <= i; j++) {
-                        number += i;
+                    for (var j = 1; j <= x; j++) {
+                        number += x;
                     }
                     document.write(number + "<br>");
                 }
